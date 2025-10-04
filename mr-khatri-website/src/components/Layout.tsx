@@ -1,18 +1,12 @@
-import Navbar from './Navbar';
+import React from 'react';
+import Header from './Header';
 import Footer from './Footer';
-import { ReactNode } from 'react';
 
-type LayoutProps = {
-  children: ReactNode;
-};
-
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <main className="flex-grow container mx-auto p-4">
-        {children}
-      </main>
+      <Header />
+      <main className="flex-grow">{children}</main>
       <Footer />
     </div>
   );

@@ -1,9 +1,9 @@
+import React from 'react';
+
 const Footer = () => {
   return (
-    <footer className="bg-dark-gray p-4 mt-8">
-      <div className="container mx-auto text-center text-muted-gray">
-        <p>© 2024 MR Khatri. All rights reserved.</p>
-      </div>
+    <footer className="bg-dark-gray text-center py-4 text-muted-gray">
+      <p>&copy; {new Date().getFullYear()} MR. KHATRI. All rights reserved.</p>
     </footer>
   );
 };
