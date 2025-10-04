@@ -9,10 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'dark-gray': '#121212',
-        'lime-green': '#32CD32',
-        'soft-white': '#EAEAEA',
-        'muted-gray': '#888888',
+        background: '#121212',
+        primary: '#32CD32',
+        text: '#EAEAEA',
+        muted: '#888888',
+      },
+      fontFamily: {
+        heading: ['Poppins', 'sans-serif'],
+        body: ['Roboto', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
